@@ -2,7 +2,7 @@
 
 ## Co to jest?
 Program Autoseller służy do zautomatyzowania sprzedaży na platformach takich jak Allegro czy OLX.
-![Koncepcja](documents/concept.png)
+![Koncepcja](documentation/flowchart.png)
 
 
 ## Instalacja
