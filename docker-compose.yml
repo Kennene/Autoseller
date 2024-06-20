@@ -11,7 +11,7 @@ services:
     ports:
       - "${POSTGRES_PORT}:${POSTGRES_PORT}"
     volumes:
-      - db-data:/var/lib/postgresql/data
+      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
 
   app:
     build:
@@ -24,6 +24,3 @@ services:
       - "8005:8005"
     depends_on:
       - db
-
-volumes:
-  db-data:
